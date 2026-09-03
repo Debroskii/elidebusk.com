@@ -1,0 +1,36 @@
+backend:
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+  media_folder: "static/images/uploads"
+  media_processing:
+    enabled: true
+    format:
+      enabled: true
+      default: webp
+    quality: 80
+    strip_metadata: true
+    width: 1600
+    height: null
+    aspect_ratio: 16x9
+collections:
+- name: posts
+  label: Posts
+  folder: content/posts
+  fields:
+    - label: Featured Image
+      name: image
+      widget: image
+      media_processing:
+        enabled: true
+        format:
+          enabled: true
+          default: jpeg
+        quality: 85
+        width: 1200
+        height: null
+        aspect_ratio: 3x2
