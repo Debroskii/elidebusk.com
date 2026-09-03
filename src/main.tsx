@@ -1,7 +1,7 @@
 import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { BrowserRouter, Route } from 'react-router'
+import { BrowserRouter } from 'react-router'
 import SiteRoutes from './routes'
 
 createRoot(document.getElementById('root')!).render(
