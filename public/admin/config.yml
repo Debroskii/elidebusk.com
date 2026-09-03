@@ -34,3 +34,5 @@ collections:
         width: 1200
         height: null
         aspect_ratio: 3x2
+media_library:
+  name: uploadcare
