@@ -1,4 +1,5 @@
 backend:
+  name: git-gateway
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
@@ -6,17 +7,17 @@ backend:
     uploadMedia: Upload “{{path}}”
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
-  media_folder: "static/images/uploads"
-  media_processing:
+media_folder: "static/images/uploads"
+media_processing:
+  enabled: true
+  format:
     enabled: true
-    format:
-      enabled: true
-      default: webp
-    quality: 80
-    strip_metadata: true
-    width: 1600
-    height: null
-    aspect_ratio: 16x9
+    default: webp
+  quality: 80
+  strip_metadata: true
+  width: 1600
+  height: null
+  aspect_ratio: 16x9
 collections:
 - name: posts
   label: Posts
