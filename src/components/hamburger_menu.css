@@ -1,0 +1,63 @@
+.HamburgerMenuButton {
+    border: none;
+    background: none;
+    text-align: center;
+    z-index: 1;
+}
+
+.HamburgerMenuButton > span {
+    font-size: inherit;
+    color: var(--accentColor);
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.HamburgerMenuDisplayContainer {
+    background: var(--accentColor);
+    position: absolute;
+    transform-origin: left top;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 100vw;
+    height: auto;
+    padding-top: 8rem;
+    z-index: -1;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HamburgerMenuDisplayLink {
+    color: var(--accentColor);
+    mix-blend-mode: multiply;
+    font-family: var(--headingFont);
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.HamburgerMenuDisplayLink:hover {
+    text-decoration-color: var(--accentColor);
+}
+
+.HamburgerMenuDisplayCTAs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.HamburgerMenuDisplayCTA {
+    background: var(--backgroundColor);
+    color: var(--accentColor);
+    font-family: var(--headingFont);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+}

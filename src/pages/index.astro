@@ -1,5 +1,14 @@
 ---
-
+import "../style/shared.css"
+import NavigationBar from "../components/navigation_bar";
+import Detail from "../components/alias/detail"
+import type { loadRenderers } from "astro:container";
+import LandingPageHeroSection from "./landing/hero_section";
+import LandingPageJournal from "./landing/journal_section";
+import LandingPageMedia from "./landing/media_section";
+import SocialMediaScroller from "../components/social_media_scroller";
+import LandingPageProjectSection from "./landing/projects_section";
+import Footer from "../components/footer";
 ---
 
 <html lang="en">
@@ -9,9 +18,17 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=list_2close" />
+		<title>elidebusk.com</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<NavigationBar client:only/>
+		<LandingPageHeroSection client:only/>
+		<LandingPageJournal client:only/>
+		<LandingPageMedia client:only/>
+		<SocialMediaScroller height="10rem" client:only/>
+		<LandingPageProjectSection client:only/>
+		<Footer client:only/>
 	</body>
 </html>

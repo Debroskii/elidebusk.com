@@ -1,0 +1,30 @@
+#NavigationBarContainer {
+    width: 100vw;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    background: var(--backgroundColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+#NavigationBarContainer > * {
+    margin: 2rem;
+    color: var(--inkColor);
+}
+
+#DesktopNavigationPages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#DesktopNavigationPages > * {
+    color: var(--inkColor);
+    font-family: "Bricolage Grotesque";
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 1.5rem;
+}

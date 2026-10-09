@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300..700&display=swap');
+:root {
+    --cWhite: #FFFFFF;
+    --cSlate: #0E1116;
+    --cAccent: #778472;
+
+    --headingFont: "Bricolage Grotesque", monospace;
+    --detailsFont: "Teko", monospace;
+    --bodyFont: "Space Mono", monospace;
+
+    --inkColor: var(--cSlate);
+    --backgroundColor: var(--cWhite);
+    --accentColor: var(--cAccent);
+
+    font-size: 1vw;
+    @media (max-width: 1000px) {
+        font-size: 3vw;
+    }
+
+    @media (prefers-color-theme: dark) {
+        --inkColor: var(--cWhite);
+        --backgroundColor: var(--cSlate);
+    }
+}
+
+body {
+    background: var(--backgroundColor);
+    color: var(--inkColor);
+    font-family: var(--bodyFont);
+    margin: 0;
+}
+
+.Detail {
+    font-family: var(--detailsFont);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 350;
+    color: color-mix(in srgb, var(--inkColor) 65%, var(--backgroundColor));
+}
+
+.Heading {
+    font-family: var(--headingFont);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+p {
+    font-family: var(--bodyFont);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+a {
+    color: var(--inkColor);
+    text-decoration: underline 0.2rem solid transparent;
+    transition: text-decoration 0.1s ease-in-out;
+    cursor: default;
+}
+
+a:hover {
+    text-decoration: underline 0.2rem solid var(--inkColor);
+    cursor: pointer;
+}

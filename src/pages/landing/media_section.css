@@ -1,0 +1,61 @@
+#DesktopLandingPageMediaContainer {
+    padding: 2rem 7rem 0rem 7rem;   
+    background: transparent;
+    height: 56.5rem;
+    width: auto;
+}
+
+#DesktopLandingPageMediaGallery {
+    background: var(--inkColor);
+    height: inherit;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "overlay";
+}
+
+#DesktopLandingPageMediaGallery > * {
+    grid-area: overlay;
+}
+
+.card-img {
+    width: 21rem;
+    height: 15rem;
+    object-fit: cover;
+    margin: 0.15rem;
+}
+
+#DesktopLandingPageMediaGallery > .splide {
+    translate: 0 -25%;
+    display: flex;
+    min-width: 0;
+    width: 100%;
+}
+
+#DesktopLandingPageMediaGalleryOverlay {
+    position: relative;
+    padding: 0;
+    z-index: 1;
+    height: inherit;
+    background: linear-gradient(0deg, var(--inkColor) -25%, transparent 30%);
+    padding: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+}
+
+#DesktopLandingPageMediaGallerySplides {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+#DesktopLandingPageMediaGalleryOverlay > .Heading {
+    color: var(--backgroundColor)
+}
+
+#DesktopLandingPageMediaGalleryOverlay > * {
+    margin: 2rem !important;
+}

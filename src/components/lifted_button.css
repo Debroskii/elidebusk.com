@@ -1,0 +1,54 @@
+.LiftedButton {
+    background: transparent;
+    padding: 0.3rem 2rem 0.3rem 2rem;
+    border: 0.15rem solid var(--inkColor);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0.2rem 0.2rem 0rem var(--inkColor);
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+    margin: 1rem !important;
+}
+
+.LiftedButton:hover {
+    background: var(--inkColor);
+    border-color: var(--backgroundColor);
+    text-decoration: none;
+}
+
+.LiftedButton:hover > .Detail {
+    color: var(--backgroundColor);
+}
+
+.LiftedButton > .Detail {
+    color: var(--inkColor);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0.1rem !important;
+}
+
+.LiftedButton.InvertedColors {
+    border: 0.15rem solid var(--backgroundColor);
+    box-shadow: 0.2rem 0.2rem 0rem var(--backgroundColor);
+}   
+
+.LiftedButton.InvertedColors > .Detail {
+    color: var(--backgroundColor);
+    padding: 0;
+    margin: 0;
+}   
+
+.LiftedButton.InvertedColors:hover {
+    background: var(--backgroundColor);
+    border-color: var(--inkColor);
+    color: var(--inkColor);
+}
+
+.LiftedButton.InvertedColors:hover > .Detail {
+    color: var(--inkColor);
+}

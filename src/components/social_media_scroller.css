@@ -1,0 +1,51 @@
+.SocialMediaScrollerContainer {
+    width: 100vw;
+    display: flex;
+}
+
+.SocialMediaScrollerContainer > .splide {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SocialMediaScrollerContainerOverlay {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(90deg, var(--backgroundColor) 10%, transparent 50%, var(--backgroundColor) 90%);
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+}
+
+.SocialMediaLinkContainer {
+    width: 20rem;
+    /* background: red; */
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+}
+
+.SocialMediaHandleLink {
+    font-family: var(--headingFont);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.SocialMediaLinkContainer > svg {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.SocialMediaHandleLink {
+    text-decoration: none !important;
+}
+
+.SocialMediaLinkContainer:hover {
+    text-decoration: none !important;
+}
